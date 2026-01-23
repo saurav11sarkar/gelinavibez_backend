@@ -51,6 +51,7 @@ const getAllUser = async (params: any, options: IOption) => {
     'firstName',
     'lastName',
     'verified',
+    'approvedLandlordBrokerAdmin'
   ];
 
   if (searchTerm) {

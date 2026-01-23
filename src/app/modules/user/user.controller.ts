@@ -24,6 +24,7 @@ const getAllUser = catchAsync(async (req, res) => {
     'firstName',
     'lastName',
     'verified',
+    'approvedLandlordBrokerAdmin',
   ]);
   const options = pick(req.query, ['page', 'limit', 'sortBy', 'sortOrder']);
   const result = await userService.getAllUser(filters, options);
